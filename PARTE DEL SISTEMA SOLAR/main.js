@@ -24,6 +24,6 @@ window.addEventListener('load',()=>{
         spinner.style.display = 'none';
         contenedor.style.display='block'
         contenedorPlanetas.style.display='block';
-    }, );
+    }, 2000);
 });
 
