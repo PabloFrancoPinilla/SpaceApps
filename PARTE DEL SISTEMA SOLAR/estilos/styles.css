@@ -8,7 +8,19 @@
 
 body{
     background-color: black;
+    overflow-x: hidden;
+    
 }
+::-webkit-scrollbar {
+    width: 12px; /* Ancho de la barra de desplazamiento */
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 255, 0, 0.5); /* Color del pulgar de la barra de desplazamiento con 50% de opacidad */
+    border-radius: 6px; /* Bordes redondeados para el pulgar */
+  }
+  ::-webkit-scrollbar-track {
+    background-color: transparent; /* Color de fondo del riel */
+  }
 ul{
     list-style: none;
     padding-left: 0;
@@ -167,6 +179,7 @@ img{
     padding: 10px;
     text-align: center;
     color: white;
+    font-size: 20px;
 }
 @media (min-width:768px) {
     .universo--info{
@@ -387,8 +400,32 @@ background-color: negro;
       border-color: #00ff00;
     }
   }
+.arrow{
+width: 50px;
+height: 50px;
+color: #00FF00;
+cursor: pointer;
+  }
 .EngName{
-    
+    font-size: 100px;
+    margin-left: 20px;
+}
+.Diam{
+    font-size: 25px;
+    margin-left: 20px;
+}
+.gravity{
+    font-size: 25px;
+    margin-left: 20px;
+}
+.Temp{
+    font-size: 25px;
+    margin-left: 20px;
+
+}
+.Density{
+    font-size: 25px;
+    margin-left: 20px;
 }
   .container {
     max-width: 400px;
