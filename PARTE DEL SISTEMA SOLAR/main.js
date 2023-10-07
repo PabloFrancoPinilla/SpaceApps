@@ -1,14 +1,7 @@
 const navegacion = document.getElementById('menu--navegacion');
 const hamburguesa = document.getElementById('hamburguesa');
 
-hamburguesa.addEventListener('click',()=>{
-    navegacion.classList.toggle('resposive--dinamico');
-    if(hamburguesa.src.split('img')[1] == '/hamburguesa.png'){
-        hamburguesa.src = '/img/cruz.png';
-    }else{
-        hamburguesa.src = '/img/hamburguesa.png';
-    }
-});
+
 
 document.addEventListener('DOMContentLoaded',()=>{
     if(window.innerWidth > 768 ){
@@ -24,6 +17,6 @@ window.addEventListener('load',()=>{
         spinner.style.display = 'none';
         contenedor.style.display='block'
         contenedorPlanetas.style.display='block';
-    }, 2000);
+    },);
 });
 
