@@ -32,7 +32,7 @@ var comands = {
     'urano': function () {
         ocultarPaginaPorId('uranus');
     },
-    'neptune': function () {
+    'neptuno': function () {
         ocultarPaginaPorId('neptune');
     },
     'volver': function () {
