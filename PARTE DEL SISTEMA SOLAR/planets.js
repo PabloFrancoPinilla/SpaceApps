@@ -23,7 +23,7 @@ var comands = {
     'marte': function () {
         ocultarPaginaPorId('mars');
     },
-    'jupiter': function () {
+    'júpiter': function () {
         ocultarPaginaPorId('jupiter');
     },
     'saturno': function () {
