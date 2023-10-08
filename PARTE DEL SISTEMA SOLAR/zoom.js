@@ -30,7 +30,7 @@ function ocultarPaginaPorId(idElemento) {
             <h2 class="EngName">${data.englishName}</h2>
             <p class="Diam">Diámetro: ${data.meanRadius} km</p>
             <p class="gravity">Gravedad:  ${data.gravity} N</p>
-            <p class="Temp">Temperatura Media: ${(data.avgTemp) - 273.15} ºC &#128520</p>
+            <p class="Temp">Temperatura Media: ${Math.round((data.avgTemp) - 273.15)} ºC &#128520</p>
             <p class="Density">Densidad: (${(data.density)})</p>
                 
             `;
@@ -41,7 +41,7 @@ function ocultarPaginaPorId(idElemento) {
             <h2 class="EngName">${data.englishName}</h2>
             <p class="Diam">Diámetro: ${data.meanRadius} km</p>
             <p class="gravity">Gravedad:  ${data.gravity} N</p>
-            <p class="Temp">Temperatura Media: ${(data.avgTemp) - 273.15} ºC &#128520 &#128520</p>
+            <p class="Temp">Temperatura Media: ${Math.round((data.avgTemp) - 273.15)} ºC &#128520 &#128520</p>
             <p class="Density">Densidad: (${(data.density)})</p>
                
             `;
@@ -52,7 +52,7 @@ function ocultarPaginaPorId(idElemento) {
             <h2 class="EngName">${data.englishName}</h2>
             <p class="Diam">Diámetro: ${data.meanRadius} km</p>
             <p class="gravity">Gravedad:  ${data.gravity} N</p>
-            <p class="Temp">Temperatura Media: ${(data.avgTemp) - 273.15} ºC &#127757</p>
+            <p class="Temp">Temperatura Media: ${Math.round((data.avgTemp) - 273.15)} ºC &#127757</p>
             <p class="Density">Densidad: (${(data.density)})</p>
               
             `;
@@ -63,7 +63,7 @@ function ocultarPaginaPorId(idElemento) {
             <h2 class="EngName">${data.englishName}</h2>
             <p class="Diam">Diámetro: ${data.meanRadius} km</p>
             <p class="gravity">Gravedad:  ${data.gravity} N</p>
-            <p class="Temp">Temperatura Media: ${(data.avgTemp) - 273.15} ºC &#10052</p>
+            <p class="Temp">Temperatura Media: ${Math.round((data.avgTemp) - 273.15)} ºC &#10052</p>
             <p class="Density">Densidad: (${(data.density)})</p>
             `;
             } else if (idElemento == "jupiter") {
@@ -73,7 +73,7 @@ function ocultarPaginaPorId(idElemento) {
             <h2 class="EngName">${data.englishName}</h2>
             <p class="Diam">Diámetro: ${data.meanRadius} km</p>
             <p class="gravity">Gravedad:  ${data.gravity} N</p>
-            <p class="Temp">Temperatura Media: ${(data.avgTemp) - 273.15} ºC &#10052 &#10052</p>
+            <p class="Temp">Temperatura Media: ${Math.round((data.avgTemp) - 273.15)} ºC &#10052 &#10052</p>
             <p class="Density">Densidad: (${(data.density)})</p>
             `;
             } else if (idElemento == "saturne") {
@@ -83,7 +83,7 @@ function ocultarPaginaPorId(idElemento) {
                 <h2 class="EngName">${data.englishName}</h2>
                 <p class="Diam">Diámetro: ${data.meanRadius} km</p>
                 <p class="gravity">Gravedad:  ${data.gravity} N</p>
-                <p class="Temp">Temperatura Media: ${(data.avgTemp) - 273.15} ºC &#10052 &#10052</p>
+                <p class="Temp">Temperatura Media: ${Math.round((data.avgTemp) - 273.15)} ºC &#10052 &#10052</p>
                 <p class="Density">Densidad: (${(data.density)})</p>
             `;
             } else if (idElemento == "uranus") {
@@ -93,7 +93,7 @@ function ocultarPaginaPorId(idElemento) {
             <h2 class="EngName">${data.englishName}</h2>
             <p class="Diam">Diámetro: ${data.meanRadius} km</p>
             <p class="gravity">Gravedad:  ${data.gravity} N</p>
-            <p class="Temp">Temperatura Media: ${(data.avgTemp) - 273.15} ºC &#10052 &#10052 &#10052;</p>
+            <p class="Temp">Temperatura Media: ${Math.round((data.avgTemp) - 273.15)} ºC &#10052 &#10052 &#10052;</p>
             <p class="Density">Densidad: (${(data.density)})</p>
             `;
             } else if (idElemento == "neptune") {
@@ -103,7 +103,7 @@ function ocultarPaginaPorId(idElemento) {
             <h2 class="EngName">${data.englishName}</h2>
             <p class="Diam">Diámetro: ${data.meanRadius} km</p>
             <p class="gravity">Gravedad:  ${data.gravity} N</p>
-            <p class="Temp">Temperatura Media: ${(data.avgTemp) - 273.15} ºC &#10052 &#10052 &#10052</p>
+            <p class="Temp">Temperatura Media: ${Math.round((data.avgTemp) - 273.15)} ºC &#10052 &#10052 &#10052</p>
             <p class="Density">Densidad: (${(data.density)})</p>
             `;
             }

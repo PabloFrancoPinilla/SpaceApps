@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
 *{
     margin: 0;
     border: 0;
@@ -355,95 +356,133 @@ img{
 
   /* TEXTO ANIMADO SISTEMA SOLAR */
 
-#contenido_block{
-display:none;
-height: 100vh;
-background-size: contain;
-background-repeat: no-repeat;
-background-position:center;
-color: #00FF00;
-background-color: negro;
+  #contenido_block {
+    display: none;
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    color: #00ff00;
+    background-color: negro;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    margin-top: auto;
+    margin-left: auto;
+    
 }
+
 @keyframes typeEffect {
     from {
-      width: 0;
+        width: 0;
     }
+
     to {
-      width: 100%;
+        width: 100%;
     }
-  }
-  
-  /* Estilos del contenedor de texto */
-  .terminal-text {
-    overflow: hidden; /* Oculta el texto que se desbordaría */
-    white-space: nowrap; /* Evita el salto de línea automático */
-    animation: typeEffect 3s steps(30) forwards; /* Nombre de la animación, duración y pasos */
-    border-right: 2px solid #00ff00; /* Efecto de cursor */
-    padding-right: 5px; /* Espacio para el cursor */
-    font-family: monospace; /* Fuente de estilo de terminal */
-  }
-  
-  /* Estilos del cursor */
-  .terminal-text::after {
-    content: '|'; /* Símbolo de cursor */
-    display: inline-block; /* Hace que el cursor sea visible */
+}
+
+/* Estilos del contenedor de texto */
+.terminal-text {
+    overflow: hidden;
+    /* Oculta el texto que se desbordaría */
+    white-space: nowrap;
+    /* Evita el salto de línea automático */
+    animation: typeEffect 3s steps(30) forwards;
+    /* Nombre de la animación, duración y pasos */
+    border-right: 2px solid #00ff00;
+    /* Efecto de cursor */
+    padding-right: 5px;
+    /* Espacio para el cursor */
+    font-family: monospace;
+    /* Fuente de estilo de terminal */
+}
+
+/* Estilos del cursor */
+.terminal-text::after {
+    content: '|';
+    /* Símbolo de cursor */
+    display: inline-block;
+    /* Hace que el cursor sea visible */
     width: 0;
-    animation: blinkCursor 1s infinite; /* Animación del cursor */
-  }
-  
-  /* Animación del cursor */
-  @keyframes blinkCursor {
-    0%, 100% {
-      border-color: transparent;
+    animation: blinkCursor 1s infinite;
+    /* Animación del cursor */
+}
+
+/* Animación del cursor */
+@keyframes blinkCursor {
+
+    0%,
+    100% {
+        border-color: transparent;
     }
+
     50% {
-      border-color: #00ff00;
+        border-color: #00ff00;
     }
-  }
-.arrow{
-width: 50px;
-height: 50px;
-color: #00FF00;
-cursor: pointer;
-  }
-.EngName{
-    font-size: 100px;
-    margin-left: 20px;
 }
-.Diam{
-    font-size: 25px;
-    margin-left: 20px;
-}
-.gravity{
-    font-size: 25px;
-    margin-left: 20px;
-}
-.Temp{
-    font-size: 25px;
-    margin-left: 20px;
+
+.arrow {
+    width: 50px;
+    height: 50px;
+    color: #00FF00;
+    cursor: pointer;
+    position: fixed;
+    /* Establece la posición fija */
+    top: 0;
+    /* Coloca el elemento en la parte superior */
+    left: 0;
+    /* Coloca el elemento en la esquina superior izquierda */
 
 }
-.Density{
+
+
+
+.EngName,
+.Diam,
+.gravity,
+.Temp,
+.Density {
     font-size: 25px;
-    margin-left: 20px;
+    margin-right: auto;
+    
+    text-align: left;
+    
+    max-width: 400px;
+  
+    padding: 5px;
+  
+    line-height: 1.4;
+
+    letter-spacing: 0.5px;
+
 }
-  .container {
+
+
+.EngName {
+    font-size: 100px;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.container {
     max-width: 400px;
     margin: 0 auto;
-  }
-  
-  .signature {
+}
+
+.signature {
     position: relative;
     overflow: auto;
     width: 100%;
     height: 0;
-    padding-bottom: 55.30973%;
-  }
-  .signature svg {
+    padding-bottom: 55%;
+}
+
+.signature svg {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-  }
+}
   
